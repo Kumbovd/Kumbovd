@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f8fafc;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  background: #122d42;
+  color: #fff;
+  padding: 16px 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 14px #0002;
+}
+.logo {
+  font-weight: 700;
+  font-size: 1.4em;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  color: #22c993;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 15px;
+  border-radius: 5px;
+  transition: background .15s, color .15s;
+}
+nav ul li a.ativo,
+nav ul li a:hover {
+  background: #22c993;
+  color: #122d42;
+}
+.hero {
+  background: linear-gradient(90deg,#22c993 0,#122d42 100%);
+  color: #fff;
+  text-align: center;
+  padding: 50px 10px 35px 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 24px #22c99311;
+}
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+.hero .destaque {
+  color: #22c993;
+  background: #fff3;
+  padding: 2px 10px;
+  border-radius: 8px;
+}
+.hero p { font-size: 1.22em; margin-bottom: 20px; }
+.cta, .cta2 {
+  background: #22c993;
+  color: #122d42;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 34px;
+  font-size: 1.12em;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 16px;
+  box-shadow: 0 2px 16px #22c99333;
+  transition: background .15s, color .15s;
+  display: inline-block;
+}
+.cta:hover, .cta2:hover { background: #fff; color: #22c993; }
+main { flex: 1 0 auto; }
+.ebookblock {
+  background: #fff;
+  margin: 28px auto 0 auto;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 2px 13px #22c99312;
+  padding: 38px 18px 25px 18px;
+}
+.ebookblock h2 {
+  color: #22c993;
+  margin-bottom: 18px;
+  font-size: 1.38em;
+}
+.ebookblock h1 {
+  color: #122d42;
+  margin-bottom: 18px;
+}
+.cursos-lista {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 17px;
+}
+.cursos-lista li {
+  margin-bottom: 17px;
+  background: #f7fcfa;
+  border-left: 4px solid #22c993;
+  padding: 12px 18px;
+  border-radius: 7px;
+}
+.tag {
+  background: #22c993;
+  color: #fff;
+  font-size: .92em;
+  border-radius: 5px;
+  padding: 2px 8px;
+  margin-left: 12px;
+}
+.ebookcta {
+  text-align: center;
+  margin-top: 18px;
+}
+.consultoria-box {
+  background: #e4f9f4;
+  color: #122d42;
+  border-radius: 12px;
+  padding: 23px 18px 17px 18px;
+  max-width: 480px;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 1px 8px #22c99322;
+}
+.consultoria-box b { color: #22c993; }
+.contato-box {
+  background: #e4f9f4;
+  color: #122d42;
+  border-radius: 12px;
+  padding: 17px 18px 17px 18px;
+  max-width: 430px;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 1px 8px #22c99322;
+}
+footer {
+  background: #122d42;
+  color: #fff;
+  text-align: center;
+  padding: 19px 10px 6px 10px;
+  font-size: 1.05em;
+  margin-top: 40px;
+  border-top: 4px solid #22c993;
+}
+footer a { color: #22c993; text-decoration: underline; }
+.footer-credits {
+  font-size: .97em;
+  color: #b2ded7;
+  margin-top: 6px;
+}
+@media (max-width: 900px) {
+  nav { padding: 12px 3vw; }
+  .ebookblock { padding: 15px 6vw; }
+}
+@media (max-width: 600px) {
+  nav { flex-direction: column; align-items: flex-start; gap: 7px; }
+  nav ul { flex-direction: column; gap: 4px; }
+  .ebookblock { padding: 8px 2vw 13px 2vw; }
+  .consultoria-box, .contato-box { padding: 13px 6px 11px 6px; }
+}
